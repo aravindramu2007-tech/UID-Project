@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Pass - Amrita Hostel Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +91 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> hostels@amrita.edu</span>
+            </div>
+            <div class="top-links">
+                <a href="#">INTERNATIONAL</a>
+                <a href="#">ALUMNI</a>
+                <a href="#">FACULTY</a>
+                <a href="#">SCHOOLS</a>
+                <a href="#">CAMPUS LIFE</a>
+            </div>
+        </div>
+    </div>
+    
+   <!-- Logo Bar -->
+<div class="logo-bar">
+    <div class="logo-content">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="amrita-logo.png" alt="Amrita University Logo" class="logo-image">
+                <div class="logo-text">
+                    <div class="logo-text-large">AMRITA</div>
+                    <div class="logo-text-medium">VISHWA VIDYAPEETHAM</div>
+                    <div class="logo-text-small">DEEMED TO BE UNIVERSITY UNDER SECTION 3 OF UGC ACT, 1956</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-content">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="food-poll.html"><i class="fas fa-utensils"></i> Food Poll</a>
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="out-pass.html"><i class="fas fa-door-open"></i> Out Pass</a>
+            <a href="home-pass.html" class="active"><i class="fas fa-home"></i> Home Pass</a>
+            <a href="feedback.html"><i class="fas fa-comment"></i> Feedback</a>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="food-poll.html"><i class="fas fa-utensils"></i> Food Poll</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="out-pass.html"><i class="fas fa-door-open"></i> Out Pass</a></li>
+                <li><a href="home-pass.html" class="active"><i class="fas fa-home"></i> Home Pass</a></li>
+                <li><a href="pass-history.html"><i class="fas fa-history"></i> Pass History</a></li>
+                <li><a href="feedback.html"><i class="fas fa-comment"></i> Feedback</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+        
+        <!-- Home Pass Content -->
+        <div class="main-content">
+            <h2>Home Pass Application</h2>
+            
+            <div class="card">
+                <h3>Apply for Home Pass</h3>
+                <div class="form-group">
+                    <label for="homepass-depart">Departure Date</label>
+                    <input type="date" id="homepass-depart">
+                </div>
+                <div class="form-group">
+                    <label for="homepass-return">Return Date</label>
+                    <input type="date" id="homepass-return">
+                </div>
+                <div class="form-group">
+                    <label for="homepass-time">Departure Time</label>
+                    <input type="time" id="homepass-time">
+                </div>
+                <div class="form-group">
+                    <label for="homepass-destination">Destination</label>
+                    <input type="text" id="homepass-destination" placeholder="Enter your destination">
+                </div>
+                <div class="form-group">
+                    <label for="homepass-address">Home Address</label>
+                    <textarea id="homepass-address" rows="3" placeholder="Enter your home address..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="homepass-purpose">Purpose</label>
+                    <textarea id="homepass-purpose" rows="3" placeholder="Provide reason for home pass..."></textarea>
+                </div>
+                <button class="btn" id="submit-homepass">Submit Application</button>
+            </div>
+            
+            <div class="card">
+                <h3>Recent Home Passes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Destination</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15-08-2023</td>
+                            <td>17-08-2023</td>
+                            <td>Chennai</td>
+                            <td>Approved</td>
+                        </tr>
+                        <tr>
+                            <td>05-08-2023</td>
+                            <td>06-08-2023</td>
+                            <td>Bangalore</td>
+                            <td>Approved</td>
+                        </tr>
+                        <tr>
+                            <td>01-08-2023</td>
+                            <td>03-08-2023</td>
+                            <td>Coimbatore</td>
+                            <td>Rejected</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Amrita Vishwa Vidyapeetham, Amritapuri Campus</p>
+                <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> hostels@amrita.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="food-poll.html">Food Poll</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <div class="footer-section">
+                <h3>About Amrita</h3>
+                <p>Amrita Vishwa Vidyapeetham is a multi-campus, multi-disciplinary research academia that is accredited 'A' by NAAC and is ranked as one of the best research institutions in India.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Amrita Vishwa Vidyapeetham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Home pass form submission
+            const homepassBtn = document.getElementById('submit-homepass');
+            homepassBtn.addEventListener('click', function() {
+                const depart = document.getElementById('homepass-depart').value;
+                const returnDate = document.getElementById('homepass-return').value;
+                const time = document.getElementById('homepass-time').value;
+                const destination = document.getElementById('homepass-destination').value;
+                const address = document.getElementById('homepass-address').value;
+                const purpose = document.getElementById('homepass-purpose').value;
+                
+                if (!depart || !returnDate || !time || !destination || !address || !purpose) {
+                    alert('Please fill in all required fields');
+                    return;
+                }
+                
+                alert('Home pass application submitted successfully!');
+                document.getElementById('homepass-depart').value = '';
+                document.getElementById('homepass-return').value = '';
+                document.getElementById('homepass-time').value = '';
+                document.getElementById('homepass-destination').value = '';
+                document.getElementById('homepass-address').value = '';
+                document.getElementById('homepass-purpose').value = '';
+            });
+            
+            // Logout functionality
+            const logoutBtn = document.getElementById('logout-btn');
+            logoutBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (confirm('Are you sure you want to logout?')) {
+                    alert('Logging out...');
+                }
+            });
+        });
+    </script>
+<script src="common.js"></script>
+</body>
+</html>

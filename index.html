@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrita Hostel Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +91 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> hostels@amrita.edu</span>
+            </div>
+            <div class="top-links">
+                <a href="#">INTERNATIONAL</a>
+                <a href="#">ALUMNI</a>
+                <a href="#">FACULTY</a>
+                <a href="#">SCHOOLS</a>
+                <a href="#">CAMPUS LIFE</a>
+            </div>
+        </div>
+    </div>
+    
+   <!-- Logo Bar -->
+<div class="logo-bar">
+    <div class="logo-content">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="amrita-logo.png" alt="Amrita University Logo" class="logo-image">
+                <div class="logo-text">
+                    <div class="logo-text-large">AMRITA</div>
+                    <div class="logo-text-medium">VISHWA VIDYAPEETHAM</div>
+                    <div class="logo-text-small">DEEMED TO BE UNIVERSITY UNDER SECTION 3 OF UGC ACT, 1956</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-content">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="food-poll.html"><i class="fas fa-utensils"></i> Food Poll</a>
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="out-pass.html"><i class="fas fa-door-open"></i> Out Pass</a>
+            <a href="home-pass.html"><i class="fas fa-home"></i> Home Pass</a>
+            <a href="feedback.html"><i class="fas fa-comment"></i> Feedback</a>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="food-poll.html"><i class="fas fa-utensils"></i> Food Poll</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="out-pass.html"><i class="fas fa-door-open"></i> Out Pass</a></li>
+                <li><a href="home-pass.html"><i class="fas fa-home"></i> Home Pass</a></li>
+                <li><a href="pass-history.html"><i class="fas fa-history"></i> Pass History</a></li>
+                <li><a href="feedback.html"><i class="fas fa-comment"></i> Feedback</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+        
+        <!-- Dashboard Content -->
+        <div class="main-content">
+            <h2>Student Dashboard</h2>
+            <p>Welcome, <span id="dashboard-username">John Doe</span> (CB.EN.U4CSE12345)</p>
+            
+            <div class="dashboard">
+                <!-- Food Poll Card -->
+                <div class="card">
+                    <h3>Today's Food Poll <span style="color: var(--gray-text); font-size: 14px;">(Ends in: <span id="poll-timer">02:45:12</span>)</span></h3>
+                    
+                    <h4>Breakfast</h4>
+                    <div class="poll-option">
+                        <span>Idli with Sambar and Chutney</span>
+                        <button class="poll-btn" data-meal="breakfast" data-option="1">Vote (45%)</button>
+                    </div>
+                    <div class="poll-option">
+                        <span>Poha with Tea</span>
+                        <button class="poll-btn" data-meal="breakfast" data-option="2">Vote (32%)</button>
+                    </div>
+                    <div class="poll-option">
+                        <span>Dosa with Potato Masala</span>
+                        <button class="poll-btn" data-meal="breakfast" data-option="3">Vote (23%)</button>
+                    </div>
+                    
+                    <h4>Lunch</h4>
+                    <div class="poll-option">
+                        <span>Rice, Sambar, Cabbage Porial</span>
+                        <button class="poll-btn" data-meal="lunch" data-option="1">Vote (38%)</button>
+                    </div>
+                    <div class="poll-option">
+                        <span>Chappati, Vegetable Kurma</span>
+                        <button class="poll-btn" data-meal="lunch" data-option="2">Vote (41%)</button>
+                    </div>
+                    <div class="poll-option">
+                        <span>Lemon Rice, Potato Fry</span>
+                        <button class="poll-btn" data-meal="lunch" data-option="3">Vote (21%)</button>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 15px;">
+                        <a href="food-poll.html" class="btn">View Full Poll</a>
+                    </div>
+                </div>
+                
+                <!-- Profile Card -->
+                <div class="card">
+                    <h3>Profile Details</h3>
+                    <div class="profile-info">
+                        <p><strong>Name:</strong> John Doe</p>
+                        <p><strong>Roll No:</strong> CB.EN.U4CSE12345</p>
+                        <p><strong>Program:</strong> B.Tech Computer Science</p>
+                        <p><strong>Year:</strong> 3rd Year</p>
+                        <p><strong>Hostel:</strong> Gandhi Block</p>
+                        <p><strong>Room No:</strong> G-205</p>
+                        <p><strong>Mobile:</strong> 9876543210</p>
+                        <p><strong>Email:</strong> john.doe@cb.students.amrita.edu</p>
+                    </div>
+                    <div style="text-align: center; margin-top: 15px;">
+                        <a href="profile.html" class="btn">Edit Profile</a>
+                    </div>
+                </div>
+                
+                <!-- Pass Status Card -->
+                <div class="card">
+                    <h3>Pass Status</h3>
+                    <div class="profile-info">
+                        <p><strong>Out Pass:</strong> Active (Until: 05-09-2023 18:00)</p>
+                        <p><strong>Home Pass:</strong> Not Applied</p>
+                        <p><strong>Recent Request:</strong> Approved (03-09-2023)</p>
+                    </div>
+                    <div style="display: flex; gap: 10px; margin-top: 15px;">
+                        <a href="out-pass.html" class="btn">Apply for Out Pass</a>
+                        <a href="home-pass.html" class="btn btn-gold">Apply for Home Pass</a>
+                    </div>
+                </div>
+                
+                <!-- Feedback Card -->
+                <div class="card">
+                    <h3>Food Feedback</h3>
+                    <p>How was today's food? Share your feedback:</p>
+                    <div class="form-group">
+                        <label for="food-quality">Food Quality</label>
+                        <select id="food-quality">
+                            <option value="">Select Rating</option>
+                            <option value="5">Excellent</option>
+                            <option value="4">Good</option>
+                            <option value="3">Average</option>
+                            <option value="2">Poor</option>
+                            <option value="1">Very Poor</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-notes">Additional Comments</label>
+                        <textarea id="feedback-notes" rows="3" placeholder="Share your feedback about the food..."></textarea>
+                    </div>
+                    <button class="btn">Submit Feedback</button>
+                    <div style="text-align: center; margin-top: 15px;">
+                        <a href="feedback.html" class="btn">View Feedback History</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Amrita Vishwa Vidyapeetham, Amritapuri Campus</p>
+                <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> hostels@amrita.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="food-poll.html">Food Poll</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <div class="footer-section">
+                <h3>About Amrita</h3>
+                <p>Amrita Vishwa Vidyapeetham is a multi-campus, multi-disciplinary research academia that is accredited 'A' by NAAC and is ranked as one of the best research institutions in India.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Amrita Vishwa Vidyapeetham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basic functionality for demonstration
+        document.addEventListener('DOMContentLoaded', function() {
+            // Poll button functionality
+            const pollButtons = document.querySelectorAll('.poll-btn');
+            pollButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const meal = this.getAttribute('data-meal');
+                    const option = this.getAttribute('data-option');
+                    alert(`Voted for ${meal} option ${option}`);
+                    
+                    // Update button text to show voted state
+                    pollButtons.forEach(btn => {
+                        if (btn.getAttribute('data-meal') === meal) {
+                            btn.style.backgroundColor = '#f0f0f0';
+                            btn.style.color = '#333';
+                        }
+                    });
+                    
+                    this.style.backgroundColor = 'var(--amrita-red)';
+                    this.style.color = 'white';
+                    this.textContent = 'Voted ✓';
+                });
+            });
+            
+            // Feedback form submission
+            const feedbackBtn = document.querySelector('.card:last-child .btn');
+            feedbackBtn.addEventListener('click', function() {
+                const quality = document.getElementById('food-quality').value;
+                const notes = document.getElementById('feedback-notes').value;
+                
+                if (!quality) {
+                    alert('Please select a food quality rating');
+                    return;
+                }
+                
+                alert('Thank you for your feedback!');
+                document.getElementById('food-quality').value = '';
+                document.getElementById('feedback-notes').value = '';
+            });
+            
+            // Logout functionality
+            const logoutBtn = document.getElementById('logout-btn');
+            logoutBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (confirm('Are you sure you want to logout?')) {
+                    alert('Logging out...');
+                    // In a real application, this would redirect to login page
+                    // window.location.href = 'index.html';
+                }
+            });
+        });
+    </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        
+        if (!isLoggedIn || !currentUser) {
+            window.location.href = 'login.html';
+        } else {
+            // Update welcome message
+            if (document.getElementById('dashboard-username')) {
+                document.getElementById('dashboard-username').textContent = currentUser.name;
+            }
+        }
+    });
+</script>
+</body>
+</html>

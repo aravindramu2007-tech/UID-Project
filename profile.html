@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Amrita Hostel Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> +91 123 456 7890</span>
+                <span><i class="fas fa-envelope"></i> hostels@amrita.edu</span>
+            </div>
+            <div class="top-links">
+                <a href="#">INTERNATIONAL</a>
+                <a href="#">ALUMNI</a>
+                <a href="#">FACULTY</a>
+                <a href="#">SCHOOLS</a>
+                <a href="#">CAMPUS LIFE</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Logo Bar -->
+<div class="logo-bar">
+    <div class="logo-content">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="amrita-logo.png" alt="Amrita University Logo" class="logo-image">
+                <div class="logo-text">
+                    <div class="logo-text-large">AMRITA</div>
+                    <div class="logo-text-medium">VISHWA VIDYAPEETHAM</div>
+                    <div class="logo-text-small">DEEMED TO BE UNIVERSITY UNDER SECTION 3 OF UGC ACT, 1956</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div class="nav-content">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <a href="food-poll.html"><i class="fas fa-utensils"></i> Food Poll</a>
+            <a href="profile.html" class="active"><i class="fas fa-user"></i> Profile</a>
+            <a href="out-pass.html"><i class="fas fa-door-open"></i> Out Pass</a>
+            <a href="home-pass.html"><i class="fas fa-home"></i> Home Pass</a>
+            <a href="feedback.html"><i class="fas fa-comment"></i> Feedback</a>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="food-poll.html"><i class="fas fa-utensils"></i> Food Poll</a></li>
+                <li><a href="profile.html" class="active"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="out-pass.html"><i class="fas fa-door-open"></i> Out Pass</a></li>
+                <li><a href="home-pass.html"><i class="fas fa-home"></i> Home Pass</a></li>
+                <li><a href="pass-history.html"><i class="fas fa-history"></i> Pass History</a></li>
+                <li><a href="feedback.html"><i class="fas fa-comment"></i> Feedback</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                <li><a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+        
+        <!-- Profile Content -->
+        <div class="main-content">
+            <h2>Student Profile</h2>
+            
+            <div class="card">
+                <h3>Personal Information</h3>
+                <div class="profile-info">
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Roll No:</strong> CB.EN.U4CSE12345</p>
+                    <p><strong>Program:</strong> B.Tech Computer Science</p>
+                    <p><strong>Year:</strong> 3rd Year</p>
+                    <p><strong>Date of Birth:</strong> 15-05-2002</p>
+                    <p><strong>Gender:</strong> Male</p>
+                    <p><strong>Blood Group:</strong> O+</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Contact Information</h3>
+                <div class="profile-info">
+                    <p><strong>Hostel:</strong> Gandhi Block</p>
+                    <p><strong>Room No:</strong> G-205</p>
+                    <p><strong>Mobile:</strong> 9876543210</p>
+                    <p><strong>Email:</strong> john.doe@cb.students.amrita.edu</p>
+                    <p><strong>Emergency Contact:</strong> 9876512345 (Father)</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h3>Edit Profile</h3>
+                <div class="form-group">
+                    <label for="edit-mobile">Mobile Number</label>
+                    <input type="text" id="edit-mobile" value="9876543210">
+                </div>
+                <div class="form-group">
+                    <label for="edit-email">Email Address</label>
+                    <input type="email" id="edit-email" value="john.doe@cb.students.amrita.edu">
+                </div>
+                <div class="form-group">
+                    <label for="edit-emergency">Emergency Contact</label>
+                    <input type="text" id="edit-emergency" value="9876512345">
+                </div>
+                <button class="btn" id="update-profile-btn">Update Profile</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Amrita Vishwa Vidyapeetham, Amritapuri Campus</p>
+                <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> hostels@amrita.edu</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="food-poll.html">Food Poll</a>
+                <a href="feedback.html">Feedback</a>
+            </div>
+            <div class="footer-section">
+                <h3>About Amrita</h3>
+                <p>Amrita Vishwa Vidyapeetham is a multi-campus, multi-disciplinary research academia that is accredited 'A' by NAAC and is ranked as one of the best research institutions in India.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Amrita Vishwa Vidyapeetham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Profile update functionality
+            const updateBtn = document.getElementById('update-profile-btn');
+            updateBtn.addEventListener('click', function() {
+                const mobile = document.getElementById('edit-mobile').value;
+                const email = document.getElementById('edit-email').value;
+                const emergency = document.getElementById('edit-emergency').value;
+                
+                if (!mobile || !email || !emergency) {
+                    alert('Please fill in all fields');
+                    return;
+                }
+                
+                alert('Profile updated successfully!');
+            });
+            
+            // Logout functionality
+            const logoutBtn = document.getElementById('logout-btn');
+            logoutBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (confirm('Are you sure you want to logout?')) {
+                    alert('Logging out...');
+                }
+            });
+        });
+    </script>
+<script src="common.js"></script>
+</body>
+</html>
